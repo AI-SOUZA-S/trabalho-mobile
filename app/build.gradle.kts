@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.aplicativodemonstracao"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.aplicativodemonstracao"
@@ -32,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    viewBinding {
+        enable = true
     }
 }
 
