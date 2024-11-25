@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Aplicativo Demonstracao</string>
+    <string name="item_name">Teste</string>
+    <string name="excluir">Excluir</string>
+    <string name="adicione_sua_nota">Adicione sua nota</string>
+    <string name="salvar">Salvar</string>
 </resources>
