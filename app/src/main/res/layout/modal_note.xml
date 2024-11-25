@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:padding="16dp"
     android:layout_gravity="bottom">
-
     <EditText
         android:id="@+id/noteEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:importantForAutofill="no"
-        android:hint="@string/adicione_sua_nota" />
+        android:hint="@string/adicione_sua_nota"
+        android:inputType="text" />
 
     <Button
+        android:layout_below="@+id/noteEditText"
         android:id="@+id/saveButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/salvar" />
-</LinearLayout>
+</RelativeLayout>

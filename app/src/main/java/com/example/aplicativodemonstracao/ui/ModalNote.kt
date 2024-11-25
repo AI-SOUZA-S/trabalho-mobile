@@ -1,4 +1,5 @@
-import android.app.Dialog
+package com.example.aplicativodemonstracao.ui
+
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import android.view.LayoutInflater
@@ -29,9 +30,13 @@ class ModalNote : DialogFragment() {
         val noteEditText: EditText = view.findViewById(R.id.noteEditText)
         val saveButton: Button = view.findViewById(R.id.saveButton)
 
+        val note = arguments?.getString("note")
+        if (note != null) {
+            noteEditText.setText(note)
+        }
         saveButton.setOnClickListener {
-            val note = noteEditText.text.toString()
-            listener?.onDialogPositiveClick(note)
+            val noteText = noteEditText.text.toString()
+            listener?.onDialogPositiveClick(noteText)
             dismiss()
         }
     }
