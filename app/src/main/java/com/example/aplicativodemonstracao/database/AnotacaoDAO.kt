@@ -17,4 +17,5 @@ interface AnotacaoDAO {
 
     @Query("SELECT * FROM anotacao")
     suspend fun listarTodos(): List<Anotacao>
+
 }
