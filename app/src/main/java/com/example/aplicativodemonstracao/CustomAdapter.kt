@@ -72,6 +72,7 @@ class CustomAdapter(
 
         return view
     }
+
     fun clear() {
         dataSource.clear()
         notifyDataSetChanged()

@@ -1,8 +1,5 @@
 package com.example.aplicativodemonstracao.database
-import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.aplicativodemonstracao.database.Anotacao
-import java.util.concurrent.Flow
 
 @Dao
 interface AnotacaoDAO {
